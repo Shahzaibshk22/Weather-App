@@ -18,7 +18,7 @@ async function getWeatherData(e) {
     try {
         const cityName = Inputvalue.value
         console.log(cityName)
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=1f4ee1dd4b6f4d4aaac142934261201&q=${cityName}&aqi=no`)
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=431d9a2db35e416db67161609261401&q=${cityName}&aqi=no`)
         const formatedRes = await response.json()
         degree.textContent = `${formatedRes.current.temp_c}°C`
         city.innerText = formatedRes.location.name
@@ -37,3 +37,4 @@ async function getWeatherData(e) {
         console.log("something went wrong")
     }
 }
+
