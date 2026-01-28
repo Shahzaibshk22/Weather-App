@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app-container">
+        <main class="main-card">
+            <div class="header">
+                <div class="location">
+                    <h3 id="city-name">--</h3>
+                    <p id="Date-day">--</p>
+                </div>
+                <div class="search-box">
+                    <form id="Search" onsubmit="getWeatherData(event)">
+                        <input list="cities" placeholder="Select City..." id="inputData">
+                        <datalist id="cities">
+                            <option value="Hyderabad-sindh">
+                            <option value="Karachi">
+                            <option value="Lahore">
+                            <option value="Islamabad">
+                            <option value="Peshawar">
+                            <option value="Quetta">
+                            <option value="Rawalpindi"> 
+                            <option value="Multan">
+                            <option value="Murree">
+                            <option value="Sialkot">
+                            <option value="Gujranwala">
+                        </datalist>
+                    </form>
+                </div>
+            </div>
+            <div class="current-weather">
+                <div class="temp-container">
+                    <h1 class="degree" id="temperature"></h1>
+                    <p class="condition" id="condition"></p>
+                </div>
+                <div class="weather-icon">☁️</div>
+            </div>
+            <div class="forecast-strip">
+                <div class="f-item active"><span>Now</span>
+                    <p id="Now">--</p>
+                </div>
+                <div class="f-item"><span>2 hour</span>
+                    <p id="after-2">--</p>
+                </div>
+                <div class="f-item"><span>3 hour</span>
+                    <p id="after-3">--</p>
+                </div>
+                <div class="f-item"><span>4 hour</span>
+                    <p id="after-4">--</p>
+                </div>
+                <div class="f-item"><span>5 hour</span>
+                    <p id="after-5">--</p>
+                </div>
+            </div>
+        </main>
+        <aside class="details-grid">
+            <div class="detail-card">
+                <span>Humidity</span>
+                <h3 id="humidity"></h3>
+            </div>
+            <div class="detail-card">
+                <span>Feels_C °</span>
+                <h3 id="FeelsLike_c"></h3>
+            </div>
+            <div class="detail-card">
+                <span>Wind</span>
+                <h3 id="windspeed"></h3>
+            </div>
+            <div class="detail-card">
+                <span>Visibility</span>
+                <h3 id="Visibility"></h3>
+            </div>
+        </aside>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
