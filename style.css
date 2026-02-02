@@ -53,6 +53,7 @@ body {
     color: white;
     outline: none;
 }
+.search-icon{ background-color: rgba(255, 255, 255, 0.15); border-radius: 50%; border: 2px solid var(--glass); position: relative; top: 5px;}
 .current-weather {
     display: flex;
     align-items: center;
@@ -111,7 +112,12 @@ body {
         width: 100%;
     }
     .search-box input {
-        width: 100%;
+        width: 93%;
+    }
+    .search-icon{
+        position: fixed;
+        top: 113px;
+        margin-left: 7px;
     }
     .degree {
         font-size: 5rem;
@@ -142,3 +148,4 @@ body {
         margin: 20px 0;
     }
 }
+
